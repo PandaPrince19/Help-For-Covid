@@ -1,0 +1,60 @@
+.hospitalCard {
+  background: var(--theme-bg);
+  width: fit-content;
+  box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.363);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+  width: 18vw;
+}
+
+.hospitalCard__add {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  border: 0.25rem dashed var(--primary);
+  cursor: pointer;
+}
+
+.hospitalCard__add > i {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.hospitalCard img {
+  border-radius: 50%;
+  box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.363);
+  width: 50%;
+  margin: auto;
+}
+
+.hospitalCard__name {
+  margin-bottom: 1rem;
+}
+
+.hospitalCard__info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.hospitalCard__actions {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.hospitalCard__actions i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hospitalCard__actions i:first-child {
+  color: var(--danger);
+}
+.hospitalCard__actions i:last-child {
+  color: var(--primary);
+}

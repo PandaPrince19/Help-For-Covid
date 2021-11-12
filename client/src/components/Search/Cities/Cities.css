@@ -1,0 +1,36 @@
+.cities {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  margin: 2rem 7vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.city {
+  cursor: pointer;
+}
+
+.city img {
+  height: 10vh;
+  display: block;
+  margin: auto;
+}
+
+.city__name {
+  text-align: center;
+}
+
+.city__name__active {
+  color: #2dddd7;
+}
+
+@media screen and (max-width: 768px) {
+  .cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}

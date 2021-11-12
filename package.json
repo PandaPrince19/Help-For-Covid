@@ -1,0 +1,14 @@
+{
+  "name": "hack_dsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "yarn --cwd server server",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "author": "",
+  "license": "ISC"
+}

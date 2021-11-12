@@ -1,0 +1,78 @@
+.hospitalStrip {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  /* background: white; */
+  /* border: 1px solid #cfcfcf; */
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.35);
+}
+
+.hospitalStrip__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hospitalStrip__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.hospitalStrip__stat {
+  text-align: center;
+}
+
+.hospitalStrip__tags {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.25rem 0;
+}
+
+.hospitalStrip__tags .dropBox__label {
+  font-size: 0.8rem;
+}
+
+.hospitalStrip__left .fa-plus-circle {
+  color: var(--dark);
+}
+
+.hospitalStrip__left h3 {
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hospitalStrip__left h3:hover {
+  opacity: 0.9;
+}
+
+.hospitalStrip__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background: red; */
+  width: 100%;
+}
+
+.hospitalStrip__info > p {
+  margin: 0.5rem 0;
+}
+.hospitalStrip__info > p > i {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hospitalStrip__row {
+    flex-direction: column;
+  }
+  .hospitalStrip__info {
+    grid-template-columns: 1fr;
+  }
+
+  .hospitalStrip__stats {
+    margin: 1rem 0;
+  }
+}

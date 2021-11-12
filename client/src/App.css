@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --landing-padding: 7vw;
+  --main-dark: #263949;
+  --light: #444444;
+  --off-white: #f5f5f5;
+  /* color codes  */
+  --primary: #007bff;
+  --danger: rgb(199, 49, 49);
+  --warning: #f3c23d;
+  --dark: #302f2f;
+  --success: #37db89;
+  /* Theme  */
+  /* --theme-bg: rgba(0, 0, 0, 0.723);
+  --theme-text: rgb(223, 223, 223); */
+  --theme-bg: rgba(255, 255, 255, 0.5);
+  --theme-text: rgb(32, 32, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-warning {
+  background: var(--warning);
+  color: white;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,43 @@
+.login {
+  background: white;
+  width: 33vw;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login h1 {
+  display: flex;
+  align-items: center;
+}
+
+.login h1 img {
+  height: 5vh;
+  margin-left: 1rem;
+}
+
+.login__inputs {
+  display: grid;
+  grid-gap: 0.75rem;
+}
+
+.covid__icon {
+  height: 10vh;
+}
+
+.login .btn {
+  font-size: 1.25rem;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .login {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,55 @@
+.banner {
+  padding: 0 var(--landing-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--main-dark);
+  height: 100%;
+}
+
+.banner__left {
+  padding-top: 15vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__left h1 {
+  font-size: 5rem;
+}
+
+.banner__desc {
+  margin: 3rem 0;
+  line-height: 2.5rem;
+  color: var(--main-dark);
+  font-size: 1.25rem;
+}
+
+.banner__right {
+  position: relative;
+}
+
+.banner .doctor {
+  height: 85vh;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+@media screen and (max-width: 768px) {
+  .banner__left h1 {
+    font-size: 3rem;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .banner__left {
+    padding-top: 2rem;
+  }
+  .banner .doctor {
+    height: 45vh;
+  }
+}

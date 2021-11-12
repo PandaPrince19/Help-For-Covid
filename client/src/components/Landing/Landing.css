@@ -1,0 +1,71 @@
+.landing {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.landing__overlay {
+  padding: 0;
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(160, 213, 228, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.landing .triangle {
+  position: absolute;
+  height: 70vh;
+  bottom: 0;
+}
+.landing .circle {
+  position: absolute;
+  top: 0;
+  height: 150vh;
+  right: 0;
+  transform: translate(50%, -70%);
+}
+.ellipse {
+  position: absolute;
+  height: 5vh;
+}
+
+.ellipse__blue {
+  top: 20vh;
+  right: 50%;
+}
+
+.ellipse__pink {
+  bottom: 20%;
+  right: 10%;
+  height: 10vh;
+}
+
+.ellipse__red {
+  height: 10vh;
+  bottom: 20%;
+  right: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .landing .triangle {
+    height: 30vh;
+  }
+  .landing .circle {
+    height: 70vh;
+    transform: translate(50%, -70%);
+  }
+
+  .ellipse__red {
+    bottom: 40%;
+  }
+}

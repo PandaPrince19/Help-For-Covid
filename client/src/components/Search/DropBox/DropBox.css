@@ -1,0 +1,60 @@
+.dropBox {
+  /* background: white; */
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  border-radius: 8px;
+  height: fit-content;
+  box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.35);
+}
+
+.dropBox__header {
+  padding: 1rem;
+}
+
+.dropBox__content {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropBox .fas {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.dropBox__label {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: white;
+  margin: 0.25rem;
+  height: fit-content;
+}
+
+.dropBox__label__outlined {
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+.dropBox__label__active {
+  border: 1px solid var(--dark);
+  background: var(--dark);
+  color: white;
+}
+
+.dropBox__label__primary {
+  background: var(--primary);
+}
+.dropBox__label__danger {
+  background: var(--danger);
+  margin-left: 1rem;
+}
+.dropBox__label__warning {
+  background: var(--warning);
+}
+.dropBox__label__success {
+  background: var(--success);
+}
+.dropBox__label__dark {
+  background: var(--dark);
+}

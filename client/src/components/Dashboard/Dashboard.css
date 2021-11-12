@@ -1,0 +1,10 @@
+.dashboard {
+  padding: 5vh 7vw;
+}
+
+.dashboard__hospitalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  grid-gap: 2rem;
+}

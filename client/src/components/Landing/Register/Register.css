@@ -1,0 +1,39 @@
+.register {
+  background: white;
+  width: 33vw;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register h1 {
+  display: flex;
+  align-items: center;
+}
+
+.register h1 img {
+  height: 5vh;
+  margin-left: 1rem;
+}
+
+.register__inputs {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.register .btn {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .register {
+    width: 90vw;
+  }
+}
